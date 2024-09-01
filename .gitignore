@@ -1,0 +1,20 @@
+# Unity3D generated file
+*.csproj
+*.sln
+*.userprefs
+*.pidb
+*.suo
+*.tmp
+*.tmp
+*.swp
+*.sublime-workspace
+*.sublime-project
+
+# Unity3D
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Tt]emp/
+[Oo]bj/
+[Pp]rojectSettings/
+[Uu]serSettings/
