@@ -7,19 +7,17 @@ Hoje eu tenho o prazer de apresentar o meu primeiro jogo, inspirado pela colabor
 
 ## 🎮 Sobre o Jogo
 
-Este jogo é uma jornada emocionante que combina [aqui você pode descrever brevemente o conceito ou tema do jogo, por exemplo, “aventura e estratégia”]. Foi criado com muito carinho e dedicação, e eu espero que você se divirta jogando tanto quanto eu me diverti desenvolvendo!
+É um jogo de plataforma 2D que inicialmente foi inspirado no jogo do Mário 2D, mas como já tinha o jogo pronto na internet, eu resolvi dar uma mudada. Peguei alguns assets online já prontos para facilitar sua criação e também vi alguns vídeos de alguns criadores sobre algumas mecânicas e como funcionava a plataforma Unity. Confesso que a parte mais dificil foi a parte da mecânica de vida tanto do player quanto dos inimigos.
 
 ## 🚀 Funcionalidades
 
-- **Exploração e Aventura**: Navegue por mundos variados e desvende mistérios ocultos.
-- **Desafios e Inimigos**: Enfrente inimigos desafiadores e teste suas habilidades.
-- **Gráficos e Sons Imersivos**: Experimente uma rica atmosfera visual e sonora.
+- **Exploração e Aventura**: Navegue por algumas fases e enfrente alguns inimigos.
+- **Gráficos e Sons Imersivos**: Sobre a música, deixei 1 só rodando em loop nas fases. Futuramente ainda pretendo adicionar sons como ao pegar as frutinhas ou ao bater em inimigos.
 
 ## 💻 Tecnologias Usadas
 
 - **Unity**: Plataforma de desenvolvimento de jogos.
 - **C#**: Linguagem de programação usada para scripting.
-- **[Outras tecnologias e ferramentas que você usou]**
 
 ## 📦 Instalação
 
