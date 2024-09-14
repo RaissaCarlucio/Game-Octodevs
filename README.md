@@ -30,5 +30,5 @@ Para jogar o jogo, siga os seguintes passos:
 3. **Após, baixe o arquivo MeuJogo.zip**
 4. **Abra o Jogo2.exe e se divirta :)**
    ```bash
-   https://github.com/usuario/repositorio.git
+   [https://github.com/usuario/repositorio.git](https://github.com/RaissaCarlucio/Game-Octodevs/releases)
 
