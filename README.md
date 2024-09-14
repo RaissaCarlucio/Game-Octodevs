@@ -25,7 +25,10 @@ Este jogo é uma jornada emocionante que combina [aqui você pode descrever brev
 
 Para jogar o jogo, siga os seguintes passos:
 
-1. **Clone o repositório**
+1. **Vá para o link abaixo**
+2. **Ao entrar, leia as intruções e desça para a parte de "Assets"**
+3. **Após, baixe o arquivo MeuJogo.zip**
+4. **Abra o Jogo2.exe e se divirta :)**
    ```bash
-   git clone https://github.com/usuario/repositorio.git
+   https://github.com/usuario/repositorio.git
 
