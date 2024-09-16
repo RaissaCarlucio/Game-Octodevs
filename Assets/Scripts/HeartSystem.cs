@@ -55,11 +55,12 @@ public class HeartSystem : MonoBehaviour
             if (player != null)
             {
                 player.enabled = false; // Desativa o script Player
+            }       
+            
+            if (GameController.instance != null)
+            {
+                GameController.instance.ShowGameOver();
             }
-
-            // Adicione outros comportamentos desejados aqui
-            // Exemplo: Ativar uma tela de Game Over
-            GameController.instance.ShowGameOver();
 
             Destroy(gameObject, 1.0f); // Destrói o GameObject após 1 segundo
         }

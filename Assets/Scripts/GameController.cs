@@ -22,6 +22,19 @@ public class GameController : MonoBehaviour
 
     }
 
+    public void StartNewGame()
+    {
+        // Carrega a cena "lvl_1"
+        SceneManager.LoadScene("lvl_1");
+    }
+
+    public void End()
+    {
+        // Carrega a cena "Menu
+        SceneManager.LoadScene("Menu");
+    }
+
+
     public void UpdateScoreText()
     {
         scoreText.text = totalScore.ToString(); // Transformando o valor em um texto
@@ -34,7 +47,10 @@ public class GameController : MonoBehaviour
 
     public void RestartGame()
     {
-        SceneManager.LoadScene("lvl_1");
+        // Obtém o nome da cena atual
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        // Recarrega a cena atual
+        SceneManager.LoadScene(currentSceneName);
     }
 
     void OnDestroy()

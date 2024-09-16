@@ -5,7 +5,8 @@ using UnityEngine;
 public class Sword : MonoBehaviour
 {
     private SpriteRenderer playerSpriteRenderer;
-    private BoxCollider2D collider2D;
+    private BoxCollider2D swordCollider;
+
 
     public Animator animator;
     public GameObject swordParent;
@@ -13,11 +14,14 @@ public class Sword : MonoBehaviour
     public Vector3 swordOffsetRight; // Posição da espada quando o personagem está virado para a direita
     public Vector3 swordOffsetLeft;  // Posição da espada quando o personagem está virado para a esquerda
 
+    public int damage = 1;
+
     void Start()
     {
         playerSpriteRenderer = transform.root.GetComponent<SpriteRenderer>();
-        collider2D = GetComponent<BoxCollider2D>();
+        swordCollider = GetComponent<BoxCollider2D>();
     }
+
 
     void Update()
     {
@@ -39,25 +43,37 @@ public class Sword : MonoBehaviour
     public void Attack()
     {
         animator.Play("Swordattack");
-        collider2D.enabled = true;
+        swordCollider.enabled = true;
         Invoke("DisableAttack", 0.5f);
     }
 
     private void DisableAttack()
     {
-        collider2D.enabled = false;
+        swordCollider.enabled = false;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy")) // Supondo que o Slime tenha a tag "Enemy"
+        if (collision.gameObject.CompareTag("Enemy")) // Supondo que o Slime, Coelho tenha a tag "Enemy"
         {
             Slime slime = collision.GetComponent<Slime>();
+            Coelho coelho = collision.GetComponent<Coelho>();
+            MeleeEnemy meleeEnemy = collision.GetComponent<MeleeEnemy>();
+
 
             if (slime != null)
             {
                 slime.TakeDamage(); // Reduz a vida do Slime ao acertar
             }
+            if(coelho != null)
+            {
+                coelho.TakeDamage(); // Reduz a vida do Coelho ao acertar
+            }
+            if(meleeEnemy != null)
+            {
+                meleeEnemy.TakeDamage(damage);
+            }
+
         }
     }
 }
