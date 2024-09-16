@@ -1,3 +1,6 @@
+# Ignorar a pasta Jogo2
+Jogo2/
+
 # Unity3D generated file
 *.csproj
 *.sln
